@@ -196,7 +196,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.sobre .txt-sobre .btn-social button, footer .btn-social button{ /* **Estilo dos botões das redes sociais do sobre e do footer, ou só tirar o sobre e o txt-sobre */
     width: 60px;    /* Largura */
     height: 60px;  /* Altura */
     border-radius: 60px; /* Borda arredondada */
@@ -305,6 +305,146 @@ form .btn-enviar input{
     cursor: pointer; /* **Muda o cursor ao passar por cima */
     transition: 1s; /* **Tempo da transição */
 }
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 60px 4%; /* **Espaçamento interno */
+    box-shadow: 0 0 30px #ffffff6a; /* Sombra */
+}
+
+footer .flex{
+    justify-content: space-between; /* **Espaçamento entre os elementos distribui os itens dentro de um conteiner, colocando espaços iguais, funciona só com a classe display flex*/
+}
+
+footer .line-footer{
+    padding: 20px 0; /* **Espaçamento interno */
+}
+
+.borda{
+    border-top: 1px solid #00ff08; /* **Borda superior */
+}
+
+footer .line-footer p i{ /* **Estilo do texto do rodapé */
+    color: #00ff08; /* **Cor do texto */
+    font-size: 22px; /* **Tamanho da fonte */
+    margin: 0 5px;
+}
+
+footer .line-footer p a{
+    color: #ffff; /* **Cor do texto */
+    margin: 0 10px; /* **Espaçamento externo */
+    font-size: 18px; /* **Tamanho da fonte */
+    font-weight: 800; /* **Negrito */
+}
+
+footer .line-footer p{
+    color: #fff; /* **Cor do texto */;
+    font-size: 18px; /* **Tamanho da fonte */
+    font-weight: 800; /* **Negrito */
+    margin: 0 5px; /* **Espaçamento externo */
+}
+
+footer .logo-footer{
+    transition: .5s; /* **Tempo da transição */
+}
+
+footer .logo-footer:hover{
+    transform: scale(1.1);
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px){ /* **Quando a tela for menor que 1020px */
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column; /* **Alinha os elementos verticalmente */
+    }
+
+    h2.titulo {
+        font-size: 30px; /* **Tamanho da fonte */
+        line-height: 34px;  /* **Espaçamento entre linhas */
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse; /* **Alinha os elementos verticalmente */
+    }
+
+    /* CABEÇALHO */
+    .menu__desktop, .aiz-ctt{
+        display: none; /* **Esconde o menu */
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px; /* Espaçamento entre os elementos */
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%; /* Espaçamento interno */
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        font-size: 30px;  /* Tamanho da fonte */
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%; /* Largura */
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+    section.especialidades {
+    padding: 40px 8%; /* Espaçamento interno */
+    }
+    /* ESTILO DO SOBRE */
+    section.sobre{
+    padding: 100px 8%; /* Espaçamento interno */
+    }
+    .sobre .txt-sobre h2 {
+        font-size: 34px; /* Tamanho da fonte */
+        line-height: 35px; /* Espaçamento entre linhas */
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center; /* **Alinhamento do texto */ 
+    }
+
+    .img-sobre img{
+        width: 100%; /* **Largura */
+    }
+
+    /* ESTILO DO PORTIFOLIO */
+
+    section.portifolio {
+        padding: 100px 8%; /* Espaçamento interno */
+    }
+
+    .img-port{
+        width: 100%; /* Largura */
+        max-width: 360px; /* Largura máxima */
+        margin: 0 auto; /* Centraliza o conteúdo */
+
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    /* ESTILO DO RODAPÉ */
+    
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+    
+}
+
+
 
 
 
