@@ -1,0 +1,311 @@
+/* ESTILO GERAL DO SITE */  
+* {
+    margin: 0; /* ** Remove o espaçamento padrão */
+    padding: 0; /* **Remove o espaçamento padrão */
+    box-sizing: border-box; /* **Adiciona a borda ao tamanho total */
+    font-family: "Roboto Mono", serif; /* **Fonte do texto */
+}
+
+body {
+    background-color: rgb(0, 0, 0); /* **Cor de fundo */
+    height: 100vh; /* **Altura total da tela */
+}
+
+.interface {
+    max-width: 1280px; /* **Largura máxima */
+    margin: 0 auto; /* **Centraliza o conteúdo */
+}
+
+.flex {
+    display: flex; /* **Exibe os elementos em linha */
+}
+
+.aiz-ctt button{
+    padding: 10px 40px; /* **Espaçamento interno */
+    font-size: 18px; /* **Tamanho da fonte */
+    font-weight: 600; /* **Negrito */
+    background-color: #66ff00; /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: 0; /* Remove a borda */
+    border-radius: 30px; /* Borda arredondada */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: 1s; /* Tempo da transição */
+}
+
+h2.titulo {
+    color: #ffff; /* Cor do texto */
+    font-size: 38px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+    margin: 40px 0; /* Espaçamento externo */
+}
+
+h2.titulo span {
+    color: #00ff08; /* Cor do texto */  
+}
+
+button:hover, form .btn-enviar input:hover{ /* **Efeito ao passar o mouse nos botões e no input do formulário */
+    box-shadow: 0px 0px 8px #00ff08; /* Sombra */
+    transform: scale(1.1);  /* Aumenta o tamanho do elemento */
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%; /* Espaçamento interno */
+    box-shadow: 0 0 40px 10px #ffffff3d; /* Sombra */
+}
+
+header > .interface {
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Exibe os elementos em linha */
+    transition: .5s; /* Tempo da transição */
+}
+
+header a:hover{ 
+    color: #ffff; /* Cor do texto */
+    transform: scale(1.1); /* Aumenta o tamanho do elemento */
+}
+
+
+header nav ul {
+    list-style-type: none; /* Remove a bolinha da lista */
+
+}
+
+header nav ul li {
+    display: inline-block; /* Exibe os elementos em linha */
+    padding: 0 40px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    padding: 40px 4%; /* Espaçamento interno */
+}
+
+section.topo-do-site .flex {
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos */
+    gap: 90px; /* Espaçamento entre os elementos */
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: #ffff;  /* Cor do texto */
+    font-size: 42px;  /* Tamanho da fonte */
+    line-height: 40px;   /* Espaçamento entre linhas */
+}
+
+.topo-do-site .txt-topo-site span {
+    color: #66ff00; /* Cor do texto */
+    font-size: 60px; /* Tamanho da fonte */
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #ffff; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    margin: 40px 0; /* Espaçamento externo */
+    text-align: justify; /* Alinhamento do texto */
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative; /* Posição relativa */
+    animation: flutuar 2s ease-in-out infinite alternate; /* Animação, dura 2s, tem o movimento suave, é infinita e vai do 0 e caminha até 100 e vice versa */
+}
+
+@keyframes flutuar{ /* Animação */
+    0%{ /* Início */
+        top: 0; /* Posição inicial */
+    }
+    100%{ /* Fim */
+        top: 30px; /* Posição final */
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades {
+    padding: 40px 4%; /* Espaçamento interno */
+}
+
+section.especialidades .flex {
+    gap: 60px; /* Espaçamento entre os elementos */
+}
+
+.especialidades .especialidades-box {
+    color: #fff; /* Cor do texto */
+    padding: 40px; /* Espaçamento interno */
+    border-radius: 20px; /* Borda arredondada */
+    margin-top: 45px; /* Espaçamento externo */
+    transition: 1s; /* Tempo da transição */
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do elemento */
+    box-shadow: 0 0 30px #ffffff6a; /* Sombra */
+}
+.especialidades .especialidades-box i {
+    font-size: 70px;    /* Tamanho da fonte */
+    color: #00ff08; /* Cor do texto */
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px; /* Tamanho da fonte */
+    margin: 15px 0; /* Espaçamento externo */
+}
+
+.especialidades .especialidades-box p {
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: justify;   /* Alinhamento do texto, deixa o texto bonito na quebra de linha */
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre{
+    padding: 100px 4%; /* Espaçamento interno */
+}
+
+section.sobre .flex{
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 60px; /* Espaçamento entre os elementos */
+}
+
+.sobre .txt-sobre{
+    color: #ffff; /* Cor do texto */
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px; /* Tamanho da fonte */
+    line-height: 40px; /* Espaçamento entre linhas */
+    margin-bottom: 50px; /* Espaçamento externo */
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08; /* Cor do texto */
+    display: block; /* Exibe o elemento em bloco */
+}
+
+.sobre .txt-sobre p {
+    font-size: 20px; /* Tamanho da fonte */
+    margin: 20px 0; /* Espaçamento externo */
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;    /* Largura */
+    height: 60px;  /* Altura */
+    border-radius: 60px; /* Borda arredondada */
+    border: none; /* Remove a borda */
+    background-color: #00ff08; /* Cor de fundo */
+    font-size: 22px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    margin: 0 5px; /* Espaçamento externo */
+    transition: .5s; /* Tempo da transição */  
+}
+
+/* ESTILO DO PORTIFOLIO */
+section.portifolio {
+    padding: 100px 4%; /* Espaçamento interno */
+    box-shadow: 0 0 40px 10px #ffffff0e; /* Sombra */
+}
+
+section.portifolio .flex {
+    justify-content: space-around; /* Espaçamento entre os elementos */
+    margin-top: 60px; /* Espaçamento externo */
+}
+
+.img-port{
+    width: 360px; /* Largura */
+    height: 460px; /* Altura */
+    background-size: cover; /* Cobrir o tamanho */
+    background-position: 100% 0%; /* Posição da imagem */
+    cursor: pointer;
+    border-radius: 40px; /* Borda arredondada */
+    transition: 8s;
+    position: relative; /* Posição relativa */
+}
+
+.img-port:hover{
+    background-position: 100% 100%; /* Posição da imagem */
+}
+
+.overlay{
+    position: absolute;  /* Posição absoluta */
+    top: 0; /* Posição no topo */
+    left: 0; /* Posição na esquerda */
+    width: 100%; /* Largura */
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px; /* Borda arredondada */
+    display: flex; /* Exibe os elementos em linha */
+    align-items: center; /* Alinha os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: 800; /* Negrito */
+    color: #ffff; /* Cor do texto */
+    opacity: 0; /* Opacidade */
+    transition: .5s; /* Tempo da transição */
+}
+
+.overlay:hover{
+    opacity: 1; /* Opacidade */
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO*/
+
+section.formulario{
+    padding: 100px 4%; /* Espaçamento interno */
+}
+
+form{
+    max-width: 500px; /* **Largura máxima */
+    margin: 0 auto; /* **Centraliza o conteúdo */
+    display: flex; /* **Exibe os elementos em linha */
+    justify-content: center; /* **Centraliza os elementos */
+    flex-direction: column; /* **Alinha os elementos verticalmente */
+    gap: 10px; /* **Espaçamento entre os elementos */
+    margin-top: 40px; /* **Espaçamento externo */
+}
+
+form input, form textarea{ /* **Estilo dos inputs e textarea */
+    width: 100%; /* **Largura */
+    background-color: rgba(101, 101, 101, 0.205);
+    border: none; /* **Remove a borda */
+    outline: none; /* **Remove a borda ao clicar no caixote */
+    padding: 20px 15px; /* **Espaçamento interno */
+    border-radius: 10px; /* **Borda arredondada */
+    color: #ffff; /* **Cor do texto */
+    font-size: 18px; /* **Tamanho da fonte */
+}
+
+/*form input::placeholder{ /* **Texto do placeholder */
+    /*color: #00ff08a6; /* **Cor do texto do placeholder */
+
+
+form textarea{
+    resize: none; /* **desativa o redimensionamento */
+    max-height: 200px; /* **Altura máxima aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/    
+}
+
+form .btn-enviar{
+    margin-top: 20px; /* **Espaçamento externo */
+    text-align: center; /* **Alinhamento do texto */
+}
+
+form .btn-enviar input{
+    width: 120px; /* **Largura */
+    background-color: #00ff08; /* **Cor de fundo */
+    color: black; /* **Cor do texto */
+    font-weight: 700px; /* **Negrito */
+    cursor: pointer; /* **Muda o cursor ao passar por cima */
+    transition: 1s; /* **Tempo da transição */
+}
+
+
+
+
